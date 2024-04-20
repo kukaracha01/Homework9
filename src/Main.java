@@ -9,16 +9,19 @@ public class Main {
         System.out.println("Сумма трат за месяц составила " + summInMonth + " рублей");
 
         System.out.println("Task2");
-        int[] moneyInBookSecond = {816, 895, 865, 878, 825};
-        int minWaste = -1;
+        int[] moneyInBookSecond = {896, 895, 815, 878, 876};
+        int minWaste = 999999999;
         int maxWaste = -1;
         for (int i = 0; i < 5; i++) {
             if (moneyInBookSecond[i] > maxWaste) {
                 maxWaste = moneyInBookSecond[i];
-            } else {
+            }
+            if (moneyInBookSecond[i] < minWaste) {
                 minWaste = moneyInBookSecond[i];
             }
         }
         System.out.printf("Минимальная сумма трат за неделю составила %s рублей. Максимальная сумма трат за неделю составила %s рублей %n", minWaste, maxWaste);
+        System.out.println("Task2");
+
     }
 }
